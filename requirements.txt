@@ -3,3 +3,4 @@ langchain
 python-dotenv
 requests
 beautifulsoup4
+openai
