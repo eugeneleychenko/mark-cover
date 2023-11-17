@@ -18,7 +18,7 @@ Cover Letter:"""
 prompt_template = PromptTemplate(input_variables=["resume", "job_description", "tone", "length"], template=template)
 cover_letter_chain = LLMChain(llm=llm, prompt=prompt_template)
 
-st.title('💪 Mark Barshay Cover Letter Generator 💪')
+st.title('💪 Mark Barshay Cover Letter Generator')
 
 st.sidebar.title('Upload your resume')
 default_resume_path = "./MB_Resume.pdf"
