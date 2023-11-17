@@ -24,7 +24,7 @@ st.sidebar.title('Upload your resume')
 default_resume_path = "./MB_Resume.pdf"
 uploaded_file = st.sidebar.file_uploader("Choose another resume", type=['pdf'])
 
-@st.cache_data
+
 def load_resume(file_path):
     loader = PyPDFLoader(file_path)
     pages = loader.load_and_split()
