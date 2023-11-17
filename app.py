@@ -21,7 +21,7 @@ cover_letter_chain = LLMChain(llm=llm, prompt=prompt_template)
 st.title('💪Mark Barshay Cover Letter Generator💪')
 
 st.sidebar.title('Upload your resume')
-@st.cache_data
+
 def load_resume():
     file_path = "./MB_Resume.pdf"
     loader = PyPDFLoader(file_path)
